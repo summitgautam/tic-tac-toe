@@ -7,7 +7,25 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <div class="game">
+        <h1 class="title">Tic Tac Toe</h1>
+        <div class="mode-select">
+            <button id="mode-friend" class="mode-option selected">Pass & Play</button>
+            <button id="mode-bot" class="mode-option">vs Computer?</button>
+        </div>
+        <div id="status-indicator" class="game-status">Player X's turn</div>
+        <div class="board">
+            <div class="square" data-cell="0"></div>
+            <div class="square" data-cell="1"></div>
+            <div class="square" data-cell="2"></div>
+            <div class="square" data-cell="3"></div>
+            <div class="square" data-cell="4"></div>
+            <div class="square" data-cell="5"></div>
+            <div class="square" data-cell="6"></div>
+        </div>
+        <button id="restart" class="action-btn">Clear Board?</button>
+    </div>
+
     <script src="script.js"></script>
 </body>
 </html>
