@@ -99,5 +99,38 @@ function evaluateboard(){
             break;
         }
     }
-
+    if(matchwon){
+        statuslabel.innerHTML=currentmode==='bot'&&activeturn==='O'?"Bot wins": `Player ${activeturn} wins!!`;
+        isplayable=false;
+        winningline.forEach(function(index){
+            cells[index].classList.add('winning-cell');
+        });
+        return true;
+    }
+    let matchtied = !gridstate.includes("");
+    if(matchtied){
+        statuslabel.innerHTML="its a tie lol";
+        isplayable=false;
+        return true;
+    }
+    if(currentmode==='friend'){
+        activeturn= activeturn==='X'?'O':'X';
+        statuslabel.innerHTML= `Player ${activeturn}'s turn!`;
+    }else{
+        activeturn= 'X';
+        statuslabel.innerHTML = `Player X's turn`;
+    }
+    return false;
 }
+function resetmatch(){
+    activeturn='X';
+    isplayable= true;
+    gridstate= ["","","","","","","","",""];
+    statuslabel.innerHTML= `Player X's turn`;
+    cells.forEach(function(cell){
+        cell.innerHTML="";
+        cell.className ="square";
+    });
+}
+clearbtn.addEventListener('click',resetmatch);
+// done ig?
