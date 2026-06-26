@@ -7,5 +7,11 @@ Tic Tac Toe is a very famous game that is played by almost everyone accross the 
 - CSS: Used CSS obv to design the layour and make it more engaging.
 - JS: Used JS to make the bot logic thing actually work and make switching modes thing work.
 ## How to use it?
-You just need to go to https://summitgautam.github.io/tic-tac-toe/ and you can play there!
+You just need to go to https://summitgautam.github.io/tic-tac-toe/ and you can play there now!
+
+## Insparation
+I made this project because i wanted to practise some frontend js and make a simple project for some backend stuffs which i want to master rn.
+
+Down here is the demo image of this tic tac toe game:
+<img src="image.png" >
 
